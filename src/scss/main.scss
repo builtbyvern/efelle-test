@@ -1,48 +1,10 @@
+@import "./fonts";
 @import "./variables";
 @import "~bootstrap/scss/bootstrap";
+@import "./global";
 @import "./partials/header";
-
-body {
-	background: $lightyellow;
-}
-
-#hero { 
-	background: url(../images/masthead-bg-uncropped.jpg) center bottom no-repeat;
-	background-size: cover;
-	text-align: right;
-	color: $lightyellow;
-	padding: 200px 0 0;
-	@include media-breakpoint-up(md) {
-		background: url(../images/masthead-bg.jpg) center bottom no-repeat;
-		background-size: cover;
-	}
-	h1 {
-		margin: 0px;
-	}
-}
-
-.locate-us {
-	display: block;
-	background: $brown;
-	text-align: center;
-	color:$lightyellow;
-	border-radius: 5px;
-	padding: 100px 0 ;
-}
-
-#contact {
-	background: $gray-dark;
-}
-
-#recent-news {
-	.post-bucket {
-		img {
-			@extend .img-fluid;
-		}
-	}
-}
-
-#site-footer {
-	background: $brown; 
-	color:#fff;
-}
+@import "./partials/hero";
+@import "./partials/main";
+@import "./partials/contact";
+@import "./partials/recent-news";
+@import "./partials/footer";

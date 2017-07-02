@@ -95,7 +95,7 @@
 $white:  #fff !default;
 $black:  #000 !default;
 $red:    #d9534f !default;
-$orange: #f0ad4e !default;
+$orange: #c6491a !default;
 $yellow: #ffd500 !default;
 $green:  #5cb85c !default;
 $blue:   #242729 !default; 
@@ -108,7 +108,7 @@ $lightyellow: #fdffe3;
 // Create grayscale
 $gray-dark:                 #242729 !default;
 $gray:                      #464a4c !default;
-$gray-light:                #636c72 !default;
+$gray-light:                #505050 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
@@ -193,7 +193,7 @@ $inverse-color: $gray-lighter !default;
 //
 // Style anchor elements.
 
-$link-color:            $brand-primary !default;
+$link-color:            $brown !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
@@ -223,9 +223,9 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1200px
 ) !default;
-@include _assert-ascending($container-max-widths, "$container-max-widths");
+@include _assert-ascending($container-max-widths, "$container-max-widths"); 
 
 
 // Grid columns
@@ -246,12 +246,12 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif !default;
+$font-family-base:       'Montserrat', $font-family-sans-serif !default;
 
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1.125rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
@@ -270,8 +270,8 @@ $font-size-h5: 1.25rem !default;
 $font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   inherit !default;
-$headings-font-weight:   500 !default;
+$headings-font-family:   'League Spartan', 'Montserrat', sans-serif;
+$headings-font-weight:   bold !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
 
@@ -414,8 +414,8 @@ $btn-transition:                 all .2s ease-in-out !default;
 
 // Forms
 
-$input-padding-x:                .75rem !default;
-$input-padding-y:                .5rem !default;
+$input-padding-x:                .9rem !default;
+$input-padding-y:                .9rem !default;
 $input-line-height:              1.25 !default;
 
 $input-bg:                       $white !default;
@@ -435,7 +435,7 @@ $input-border-focus:             lighten($brand-primary, 25%) !default;
 $input-box-shadow-focus:         $input-box-shadow, rgba($input-border-focus, .6) !default;
 $input-color-focus:              $input-color !default;
 
-$input-color-placeholder:        $gray-light !default;
+$input-color-placeholder:        $gray-light !default; 
 
 $input-padding-x-sm:             .5rem !default;
 $input-padding-y-sm:             .25rem !default;

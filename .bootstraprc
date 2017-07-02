@@ -10,7 +10,7 @@ styleLoaders:
   - sass-loader
 
 styles:
-  normalize: true
+  normalize: false
   print: true
 
 scripts:

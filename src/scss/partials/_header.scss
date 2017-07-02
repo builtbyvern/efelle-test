@@ -1,22 +1,62 @@
 header#site-header {
-	position: absolute;
-	width:100%;
-	top: 0;
-	left: 0;
-	.navbar {
-		background: none;
-		.navbar-brand {
-			text-align: center;
-			img {
-				max-width: auto;
-				@include media-breakpoint-down(sm) {
-					margin: 0 auto;
-				}	
-			}
-		}
-		.navbar-nav {
-			text-align: right;
-		}
-	}
+  position: absolute;
+  width:100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  nav {
+    .logo {
+      img {
+        display: block;
+        max-width:40%;
+        margin: 0 auto;
+        @include media-breakpoint-up(md) {
+          max-width: 100%;
+          margin: 0;
+        }
+        @include media-breakpoint-up(lg) {
+          max-width: auto;
+          width:242px;
+          position: relative;
+          top: -10px;
+          left: -22px;
+        }
+      }
+    }
+    ul.menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: $headings-font-family;
+      @include media-breakpoint-up(md) {
+        text-align: right;
+        margin: 40px 0 0;
+      }
+      li {
+        display: inline-block;
+        @include media-breakpoint-up(md) {
+          margin-left:33px;
+          letter-spacing: .7px;
+        }
+        a{
+          color:#fff;
+          text-shadow: -3px -1px 25px rgba(56, 48, 59, 1);
+          border-bottom: solid 3px rgba(#d6d5d7, 0);
+          transition: all .15s ease-in-out;
+          text-decoration: none;
+          display: block;
+          padding: 5px;
+          &:hover {
+            border-bottom: solid 3px rgba(#d6d5d7, 1);
+          }
+          @include media-breakpoint-up(md) {
+            font-size:18px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
 

@@ -1,0 +1,45 @@
+body {
+	background: $lightyellow;
+}
+
+.padded {
+	padding: 100px 0;
+}
+
+a {
+	transition: all .15s ease-in-out;
+}
+
+button, input.form-control, optgroup, select, textarea.form-control {
+	font-family: $font-family-sans-serif;
+	font-weight: 400;
+	border-radius: .75rem;
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $gray-light !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $gray-light;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $gray-light;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $gray-light;
+}
+
+.btn-outline-white {
+	@include button-variant(#fff, rgba(#fff, 0), #fff);
+	border-width: 2px;
+	border-radius: .75rem;
+	padding: 0.75rem 2.3rem;
+	letter-spacing: 4px;
+	&:hover {
+		background:#fff;
+		color:$brand-primary;
+		border-color:#fff;
+	}
+}
+

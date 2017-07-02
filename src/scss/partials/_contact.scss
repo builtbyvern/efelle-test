@@ -1,0 +1,44 @@
+#contact {
+  background: $gray-dark;
+  padding:50px 0;
+  h2 {
+    color:#fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size:30px;
+    letter-spacing:11px;
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  textarea.form-control {
+    min-height: 140px;
+  }
+  .submit {
+    text-align: center;
+  }
+  input.form-control:focus, textarea.form-control:focus {
+    border: solid 1px $brand-primary;
+    box-shadow: 0px 0px 8px 0px rgba(#fff, .8);
+  }
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    $gray-light !important;
+    opacity: .54 !important;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color:    $gray-light  !important;
+     opacity:  .54 !important;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:    $gray-light  !important;
+     opacity:  .54 !important;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color:    $gray-light  !important;
+     opacity: .54 !important;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color:    $gray-light  !important;
+     opacity: .54 !important;
+  }
+}

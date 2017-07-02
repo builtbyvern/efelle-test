@@ -1,0 +1,31 @@
+#hero { 
+	background: url(../images/masthead-bg-uncropped.jpg) center bottom no-repeat;
+	background-size: cover;
+	text-align: right;
+	color: $lightyellow;
+	overflow: hidden;
+  position: relative;
+  z-index: 50;
+	@include media-breakpoint-up(md) {
+		background: url(../images/masthead-bg.jpg) center bottom no-repeat;
+		background-size: cover;
+	}
+	#hero-content {
+    height:400px;
+		@include media-breakpoint-up(lg) {
+      height:550px; 
+    }
+	}
+	h1 {
+	margin: 0px;
+    font-size:45px;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: -2px;
+    @include media-breakpoint-up(xl) {
+      font-size:90px;
+      margin: 0 22px -3px 0;
+      letter-spacing: 4px;
+    }
+	}
+}
