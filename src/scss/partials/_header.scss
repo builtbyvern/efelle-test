@@ -1,0 +1,22 @@
+header#site-header {
+	position: absolute;
+	width:100%;
+	top: 0;
+	left: 0;
+	.navbar {
+		background: none;
+		.navbar-brand {
+			text-align: center;
+			img {
+				max-width: auto;
+				@include media-breakpoint-down(sm) {
+					margin: 0 auto;
+				}	
+			}
+		}
+		.navbar-nav {
+			text-align: right;
+		}
+	}
+}
+
