@@ -2,7 +2,7 @@
 
 Based of the file given...
 
-Run NPM install to get load all the required packages. Built using Laravel Valet so you'll have to set up your own server if using something else.
+Run NPM install to get all the required packages. Built using Laravel Valet so you'll have to set up your own server if using something else.
 
 Notes:
 
