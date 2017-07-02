@@ -25,8 +25,12 @@
 			&:last-child {
 				border-right: none;
 			}
-			&:first-child a{
-				padding-left: 0;
+			&:first-child {
+				margin-left: 0;
+				a {
+					padding-left: 0;
+				}
+				
 			}
 			a {
 				padding: 0 10px;
