@@ -17,3 +17,5 @@ Notes:
 - PNG images have been converted to jpg where possible to increase load times.
 
 - This is literally my first time building a webpack file from scratch. I'm positive some things are not 100% set up and there are some things I'd like to add (webpack's built in server vs Laravel), but it worked so I'm happy...
+
+Once again, thank you for taking the time to review this. Enjoy diving in!
