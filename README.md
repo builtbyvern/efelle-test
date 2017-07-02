@@ -12,7 +12,7 @@ Notes:
 
 - If I was coding this up in-house, I would want to verify with the designer. Padding seems to lack a cohesive gameplan between sections. Heading fonts change from Montserrat and League Gothic without a good reason. 
 
-- I was hoping for a good way to incorporate the <picture> element for some respsonsive image loading, but couldn't find a use. Next time, for sure. If the assets had been delivered at a higher dpi, I would have incorporated that for higher density screens.
+- I was hoping for a good way to incorporate the `<picture>` element for some respsonsive image loading, but couldn't find a use. Next time, for sure. If the assets had been delivered at a higher dpi, I would have incorporated that for higher density screens.
 
 - PNG images have been converted to jpg where possible to increase load times.
 
